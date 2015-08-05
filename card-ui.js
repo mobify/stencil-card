@@ -1,11 +1,20 @@
-define([
-    '$'
-], function($) {
+define(['$'], function($) {
+    /**
+     * Constructor
+     */
+    var Card = function Card($el, options) {
+        // Component instance properties.
+        this.$el = $el;
+    }
 
-    var init = function() {
-    };
-
+    /**
+     * Export the init method required by AdaptiveJS.
+     */
     return {
-        init: init
+        'init': function($el, options) {
+            // If already initialized, return the instance; otherwise, create it
+            // and expose it through `$('.c-select').data('component')`.
+            return $el.data('component') || $el.data('component', new Card($el, options));
+        }
     };
 });

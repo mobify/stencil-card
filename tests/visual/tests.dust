@@ -5,7 +5,15 @@
 {@c-spec for="Card Component" repository=repo}
     {@c-spec__test describe=".c-card"}
         {@c-spec__case expect="Should have feature A"}
-            {@c-card /}
+
+            {@c-card title="Kangaroo Valley Safari"}
+            {:body}
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            {:footer}
+                {@c-card__action href="#explore"}Explore{/c-card__action}
+                {@c-card__action href="#share"}Share{/c-card__action}
+            {/c-card}
+
         {/c-spec__case}
     {/c-spec__test}
 {/c-spec}
