@@ -4,7 +4,8 @@
 // Configurable Variables
 // ---
 
-$card__variable-name: true !default;
+// $card__variable-name: true !default;
+$card__draw-shadow: true !default;
 
 
 // Dependencies
@@ -18,13 +19,57 @@ $card__variable-name: true !default;
 // ---
 
 .c-card {
-    // Your component styles go here
+    background: #fff;
+
+    @if $card__draw-shadow {
+        box-shadow: 0 4px 8px hsla(0, 0%, 0%, 0.15);
+    }
 }
 
 
-// Card sub-component
+// Card header
 // ---
 
-.c-card__sub-component {
-    // Your component styles go here
+.c-card__header {
+    padding: $unit*1.5 $unit*1.5 0;
+}
+
+// Card title
+// ---
+
+.c-card__title {
+    margin: $unit 0;
+}
+
+
+// Card body
+// ---
+
+.c-card__body {
+    padding: 0 $unit*1.5;
+}
+
+
+// Card footer
+// ---
+
+.c-card__footer {
+    display: flex;
+    padding: $unit*0.5;
+}
+
+
+// Card action
+// ---
+
+.c-card__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: $tap-size;
+    padding: $unit*0.5 $unit;
+    border: 0;
+
+    text-decoration: none;
+    -webkit-appearance: none;
 }

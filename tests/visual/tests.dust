@@ -4,7 +4,7 @@
 
 {@c-spec for="Card Component" repository=repo}
     {@c-spec__test describe=".c-card"}
-        {@c-spec__case expect="Should have feature A"}
+        {@c-spec__case expect="Should render a Card with header, body copy and two actions."}
 
             {@c-card title="Kangaroo Valley Safari"}
             {:body}
