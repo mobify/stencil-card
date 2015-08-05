@@ -1,0 +1,30 @@
+// card
+// ===
+
+// Configurable Variables
+// ---
+
+$card__variable-name: true !default;
+
+
+// Dependencies
+// ---
+
+@import 'stencil-variables/variables';
+@import 'level/level';
+
+
+// Card root
+// ---
+
+.c-card {
+    // Your component styles go here
+}
+
+
+// Card sub-component
+// ---
+
+.c-card__sub-component {
+    // Your component styles go here
+}

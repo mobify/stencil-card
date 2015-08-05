@@ -1,0 +1,3 @@
+<div {?id}id="{.}"{/id} class="c-card {class}" {?role}role="{.}"{/role} data-adaptivejs-component="stencil-card">
+    Component stuff goes here!
+</div>
