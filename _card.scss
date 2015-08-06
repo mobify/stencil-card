@@ -4,7 +4,8 @@
 // Configurable Variables
 // ---
 
-// $card__variable-name: true !default;
+$card__background: #fff !default;
+$card__padding: $unit*1.5 !default;
 $card__draw-shadow: true !default;
 
 
@@ -31,7 +32,7 @@ $card__draw-shadow: true !default;
 // ---
 
 .c-card__header {
-    padding: $unit*1.5;
+    padding: $card__padding;
 }
 
 // Card title
@@ -46,7 +47,7 @@ $card__draw-shadow: true !default;
 // ---
 
 .c-card__body {
-    padding: 0 $unit*1.5;
+    padding: 0 $card__padding;
 }
 
 
@@ -55,7 +56,7 @@ $card__draw-shadow: true !default;
 
 .c-card__footer {
     display: flex;
-    padding: $unit*0.5;
+    padding: $card__padding - $unit;
 }
 
 
